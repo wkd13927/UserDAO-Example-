@@ -95,19 +95,19 @@ public class UserDAO_Test extends AbstractDAO {
 				
 					VariableBinder binder = new VariableBinder("basic.user.update");
 					
-					binder.set(" :USER_CD",                                    param.getString("USER_CD"));
+					binder.set(" :USER_CD",                                      param.getString("USER_CD"));
 					binder.set(" :USER_ID",                                      param.getString("USER_ID"));
-					binder.set(" :USER_NM",                                    param.getString("USER_NM"));
-					binder.set(" :CLIENT_CD",                                  param.getString("CLIENT_CD"));
-					binder.set(" :AUTH_CD",                                     param.getString("AUTH_CD"));
-					binder.set(" :USER_PW",                                    param.getString("USER_PW"));
+					binder.set(" :USER_NM",                                      param.getString("USER_NM"));
+					binder.set(" :CLIENT_CD",                                    param.getString("CLIENT_CD"));
+					binder.set(" :AUTH_CD",                                      param.getString("AUTH_CD"));
+					binder.set(" :USER_PW",                                      param.getString("USER_PW"));
 					binder.set(" :TEL_NO",                                       param.getString("TEL_NO"));
-					binder.set(" :MOBILE_NO",                                 param.getString("MOBILE_NO"));
+					binder.set(" :MOBILE_NO",                                    param.getString("MOBILE_NO"));
 					binder.set(" :DEL_YN",                                       param.getString("DEL_YN"));
-					binder.set(" :POST_NO",                                     param.getString("POST_NO"));
-					binder.set(" :ADDR",                                    	   param.getString("ADDR"));
+					binder.set(" :POST_NO",                                      param.getString("POST_NO"));
+					binder.set(" :ADDR",                          	             param.getString("ADDR"));
 					binder.set(" :WORK_IP",                                      param.getString("WORK_IP"));
-					binder.set(" :UPDATE_NO",                                 param.getString("UPDATE_NO"));
+					binder.set(" :UPDATE_NO",                                    param.getString("UPDATE_NO"));
 				
 					this.executeUpdate(binder);
 				
@@ -120,7 +120,7 @@ public class UserDAO_Test extends AbstractDAO {
 				
 					VariableBinder binder = new VariableBinder("basic.user.delete");
 					
-					binder.set(" :USER_CD",                                  param.getString("USER_CD"));
+					binder.set(" :USER_CD",                                   param.getString("USER_CD"));
 					binder.set(" :WORK_IP",                                   getSession().getWorkIP());
 					binder.set(" :UPDATE",                                    getSession().getUserCd());
 					
